@@ -378,6 +378,32 @@ h2 { margin: 0 0 0.75rem; font-size: clamp(2rem, 4vw, 3rem); }
 .detail h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
 .detail-grid { grid-template-columns: 1fr 1fr; }
 .offer { padding: 1rem 1.1rem; }
+.regulator-list, .deliver-grid { display: grid; gap: 0.9rem; margin-top: 1.2rem; }
+.deliver-grid { grid-template-columns: 1fr 1fr; }
+.regulator, .deliver {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.05rem 1.15rem;
+}
+.regulator { border-left: 4px solid var(--steel-2); }
+.regulator h3, .deliver h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+.regulator p, .deliver p { margin: 0; color: var(--muted); }
+.assure {
+  margin-top: 1.4rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 16px;
+  background: #1a140c;
+  color: var(--ice);
+}
+.assure p { margin: 0; }
+.spaced { margin-top: 2.2rem; }
+.fineprint {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: italic;
+}
 
 .form {
   display: grid;
@@ -438,7 +464,7 @@ textarea { min-height: 140px; resize: vertical; }
   .dropdown, .flyout { position: static; min-width: 0; box-shadow: none; background: transparent; }
   .dropdown a, .submenu > button { color: var(--ice); }
   .flyout { padding-left: 0.8rem; }
-  .hero-layout, .welcome-grid, .service-grid, .principles-grid, .split, .detail-grid, .footer-grid, .band .wrap {
+  .hero-layout, .welcome-grid, .service-grid, .principles-grid, .split, .detail-grid, .footer-grid, .band .wrap, .deliver-grid {
     grid-template-columns: 1fr;
   }
   .slider-ui { display: none; }

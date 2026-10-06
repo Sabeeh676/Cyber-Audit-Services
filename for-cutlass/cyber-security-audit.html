@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyber Security Audit</title>
+  <!--
+    How to add this to the Cutlass site
+    1. In WordPress, create a new page titled "Cyber Security Audit".
+    2. Paste everything inside <main class="csa"> into that page (a Custom HTML block is enough; the styles are included).
+    3. Under Appearance → Menus, add the page to the Services menu, next to Security.
+       Do not replace the existing Security page. That page stays physical security.
+    4. Their theme already supplies the site header, menu and footer. Those are only included below so this file can be opened on its own.
+  -->
+  <style>
+    .csa {
+      --ink: #1a160f;
+      --muted: #5c564c;
+      --gold: #c6a15a;
+      --paper: #f7f4ee;
+      --line: #e4dccb;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 3.5rem 1.25rem 4rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    .csa, .csa * { box-sizing: border-box; }
+    .csa-wrap { width: min(920px, 100%); margin: 0 auto; }
+    .csa-kicker {
+      margin: 0 0 0.6rem;
+      color: #8c6a24;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .csa h1 {
+      margin: 0 0 0.8rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.1rem, 4vw, 3.2rem);
+      font-weight: 560;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+    }
+    .csa h1 span { color: #a68432; }
+    .csa-lead { max-width: 42rem; color: var(--muted); font-size: 1.05rem; }
+    .csa h2 {
+      margin: 2.2rem 0 0.8rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 560;
+    }
+    .csa-rule { width: 64px; height: 3px; margin: 0 0 1rem; border: 0; background: var(--gold); }
+    .csa-list, .csa-grid { display: grid; gap: 0.8rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+    .csa-grid { grid-template-columns: 1fr 1fr; }
+    .csa-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--gold);
+      border-radius: 14px;
+      padding: 0.95rem 1.05rem;
+    }
+    .csa-card h3 { margin: 0 0 0.3rem; font-size: 1.02rem; }
+    .csa-card p { margin: 0; color: var(--muted); }
+    .csa-close {
+      margin-top: 1.4rem;
+      padding: 1.2rem 1.3rem;
+      border-radius: 14px;
+      background: #111;
+      color: #f3e6c4;
+    }
+    .csa-close p { margin: 0; font-size: 1.05rem; }
+    .csa-note { margin: 1rem 0 0; color: var(--muted); font-size: 0.92rem; font-style: italic; }
+    @media (max-width: 720px) {
+      .csa-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body style="margin:0;background:#f7f4ee;">
+  <main class="csa">
+    <div class="csa-wrap">
+      <p class="csa-kicker">Information systems audit</p>
+      <h1>Cyber Security <span>Audit</span></h1>
+      <p class="csa-lead">Regulated organisations need to show that technology, information security and operational resilience controls are designed, implemented and reviewed. These audit services follow the requirements of the bodies below, in the UK, Europe and abroad.</p>
+
+      <h2>VAPT</h2>
+      <hr class="csa-rule">
+      <p class="csa-lead">Vulnerability assessment and penetration testing across applications, interfaces, infrastructure, and people facing exercises.</p>
+      <ul class="csa-grid">
+        <li class="csa-card"><h3>Web Application Penetration Testing (OWASP Top 10)</h3></li>
+        <li class="csa-card"><h3>API Security Testing</h3></li>
+        <li class="csa-card"><h3>Network &amp; Infrastructure Penetration Testing</h3></li>
+        <li class="csa-card"><h3>Cloud Security Assessment (AWS, Azure)</h3></li>
+        <li class="csa-card"><h3>Adversary Simulation</h3></li>
+        <li class="csa-card"><h3>Social Engineering &amp; Phishing Simulation</h3></li>
+      </ul>
+
+      <h2>Compliance &amp; Audit</h2>
+      <hr class="csa-rule">
+      <p class="csa-lead">Assessments and configuration reviews against stated frameworks and network controls.</p>
+      <ul class="csa-grid">
+        <li class="csa-card"><h3>PCI DSS Assessment</h3></li>
+        <li class="csa-card"><h3>NIST CSF Alignment Assessment</h3></li>
+        <li class="csa-card"><h3>FIPS 140-2 Cryptographic Implementation Review</h3></li>
+        <li class="csa-card"><h3>Infrastructure &amp; Network Security Testing</h3></li>
+        <li class="csa-card"><h3>Firewall &amp; IDS/IPS Configuration Audit</h3></li>
+        <li class="csa-card"><h3>Network Segmentation &amp; VLAN Security Review</h3></li>
+        <li class="csa-card"><h3>Secure Tunnelling Gateway Testing (IPsec / StrongSwan / DPDK)</h3></li>
+        <li class="csa-card"><h3>Regulatory Information Systems Audit</h3></li>
+      </ul>
+
+      <h2>Digital Forensics &amp; Incident Response</h2>
+      <hr class="csa-rule">
+      <p class="csa-lead">Acquisition, analysis, and incident work with the handling record kept intact.</p>
+      <ul class="csa-grid">
+        <li class="csa-card"><h3>Digital Evidence Acquisition &amp; Analysis</h3></li>
+        <li class="csa-card"><h3>Mobile Device Forensics (iOS, Android, SIM)</h3></li>
+        <li class="csa-card"><h3>Malware Analysis &amp; Reverse Engineering</h3></li>
+        <li class="csa-card"><h3>Incident Response &amp; Root Cause Analysis</h3></li>
+        <li class="csa-card"><h3>Chain of Custody Evidence Handling</h3></li>
+      </ul>
+
+      <h2>Regulatory authorities</h2>
+      <hr class="csa-rule">
+      <div class="csa-list">
+        <article class="csa-card">
+          <h3>UK Gambling Commission</h3>
+          <p>Certain remote gambling operators must arrange an annual independent security audit against controls aligned with ISO/IEC 27001.</p>
+        </article>
+        <article class="csa-card">
+          <h3>Financial Conduct Authority and Prudential Regulation Authority</h3>
+          <p>Regulated financial firms must keep effective technology governance, cyber resilience, outsourcing controls and operational resilience arrangements.</p>
+        </article>
+        <article class="csa-card">
+          <h3>European Supervisory Authorities</h3>
+          <p>Banks and other EU financial entities must meet DORA requirements for ICT risk, resilience testing, incident management, third party risk and independent audit review.</p>
+        </article>
+        <article class="csa-card">
+          <h3>Information Commissioner’s Office and European data protection authorities</h3>
+          <p>Organisations must apply appropriate technical and organisational controls for personal information and be able to show accountability.</p>
+        </article>
+        <article class="csa-card">
+          <h3>Payment card requirements</h3>
+          <p>Organisations that process cardholder information may need independent assurance against PCI DSS.</p>
+        </article>
+      </div>
+
+      <h2>Why Choose Us?</h2>
+      <hr class="csa-rule">
+      <p class="csa-lead">Assessments are independent and risk based, covering the regulatory requirement and the practical business risk. The work includes evidence review, stakeholder interviews, control testing and clear reporting.</p>
+      <p>Clients receive:</p>
+      <ul class="csa-grid">
+        <li class="csa-card"><h3>Clearly defined audit scope and objectives</h3></li>
+        <li class="csa-card"><h3>Evidence based findings and risk ratings</h3></li>
+        <li class="csa-card"><h3>Regulatory and control gap analysis</h3></li>
+        <li class="csa-card"><h3>Practical, prioritised recommendations</h3></li>
+        <li class="csa-card"><h3>Management action and remediation plans</h3></li>
+        <li class="csa-card"><h3>Follow up reviews to confirm corrective actions</h3></li>
+      </ul>
+
+      <div class="csa-close">
+        <p>We help organisations identify control weaknesses, strengthen regulatory readiness and provide management with clear assurance over critical information systems.</p>
+      </div>
+      <p class="csa-note">Formal regulatory, certification or statutory audits will only be undertaken where the required auditor qualifications, independence and regulatory eligibility criteria are satisfied.</p>
+    </div>
+  </main>
+</body>
+</html>
