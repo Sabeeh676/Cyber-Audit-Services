@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyber Security Services</title>
+  <!--
+    Tab 2 of 2 under Services.
+    Create a new menu item titled "Cyber Security Services".
+    Paste the style block and everything inside main into a Custom HTML block on that page.
+    Do not replace the existing Security tab. The audit tab is the other file, index.html.
+  -->
+  <style>
+    .csa {
+      --ink: #1a160f;
+      --muted: #5c564c;
+      --gold: #c6a15a;
+      --paper: #f7f4ee;
+      --line: #e4dccb;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 3.5rem 1.25rem 4rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    .csa, .csa * { box-sizing: border-box; }
+    .csa-wrap { width: min(920px, 100%); margin: 0 auto; }
+    .csa-kicker {
+      margin: 0 0 0.6rem;
+      color: #8c6a24;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .csa h1 {
+      margin: 0 0 0.8rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.1rem, 4vw, 3.2rem);
+      font-weight: 560;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+    }
+    .csa h1 span { color: #a68432; }
+    .csa-lead { max-width: 42rem; color: var(--muted); font-size: 1.05rem; }
+    .csa h2 {
+      margin: 2.2rem 0 0.8rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 560;
+    }
+    .csa-rule { width: 64px; height: 3px; margin: 0 0 1rem; border: 0; background: var(--gold); }
+    .csa p { margin: 0 0 0.9rem; }
+    .csa-list { display: grid; gap: 0.8rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+    .csa-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--gold);
+      border-radius: 14px;
+      padding: 0.95rem 1.05rem;
+    }
+    .csa-card h3 { margin: 0 0 0.3rem; font-size: 1.02rem; }
+    .csa-card p { margin: 0; color: var(--muted); }
+    .csa-more { margin: 1.6rem 0 0; }
+    .csa-more a { color: #8c6a24; font-weight: 700; }
+  </style>
+</head>
+<body style="margin:0;background:#f7f4ee;">
+  <main class="csa">
+    <div class="csa-wrap">
+      <p class="csa-kicker">Alongside the audit</p>
+      <h1>Cyber Security <span>Services</span></h1>
+      <p class="csa-lead">These services sit beside the IT and information systems audit. Each one is a separate engagement.</p>
+
+      <div class="csa-list">
+        <article class="csa-card">
+          <h3>Vulnerability Assessment and Penetration Testing</h3>
+          <p>Authorised testing of websites, applications, APIs, networks and cloud systems to identify exploitable vulnerabilities and recommend corrective action.</p>
+        </article>
+        <article class="csa-card">
+          <h3>Computer Forensics</h3>
+          <p>Examination of computers, emails, system logs and digital records in support of cyber incidents, fraud investigations, data loss and unauthorised activity.</p>
+        </article>
+        <article class="csa-card">
+          <h3>Quantum Security Readiness</h3>
+          <p>Identification of cryptographic dependencies and development of a practical roadmap for migration towards post quantum security.</p>
+        </article>
+      </div>
+      <p class="csa-more"><a href="index.html">IT and Information Systems Audit</a></p>
+    </div>
+  </main>
+</body>
+</html>
